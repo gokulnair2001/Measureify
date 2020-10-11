@@ -36,6 +36,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
+        configuration.planeDetection = .horizontal
+        configuration.planeDetection = .vertical
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -107,7 +110,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let distance = sqrt(pow(a, 2) + pow(b, 2) + pow(c, 2))
         
         distanceLbl.text? = String(abs(distance))
-        arTextlbl(text: String(abs(distance)), atPosition: point2.position)
+        arTextlbl(text: String(abs(distance)) + " m", atPosition: point1.position)
         
     }
     
