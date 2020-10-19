@@ -1,5 +1,5 @@
 # Measureify
-An AR Measurement app.(Udemy course App)
+An AR Measurement App.(Udemy course App)
 
 ![Badge](https://img.shields.io/badge/License-MIT-yellow) 
 ![Badge](https://img.shields.io/badge/Xcode-12.01-green)
